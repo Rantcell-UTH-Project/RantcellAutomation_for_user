@@ -1,0 +1,15 @@
+pytest==7.3.1
+selenium==4.23.1
+webdriver-manager==4.0.2
+pytest-html
+pytest-xdist
+openpyxl
+allure-pytest
+pandas
+# PyAutoGUI
+# PyGetWindow
+# opencv-python
+# matplotlib
+xlwings
+msoffcrypto-tool
+
