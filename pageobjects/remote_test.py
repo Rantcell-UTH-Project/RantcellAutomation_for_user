@@ -142,11 +142,12 @@ def common(driver,device,campaign,campaigns_created,usercampaignsname,testgroup,
                 # statement = "Test failed"
                 # pytest.fail(statement)
                 remote_test_status.append(False)
-            if (test_Execution_status == [] or test_Execution_status == [False] or test_Execution_status == [None]) or (campaigns_status == [] or campaigns_status == [False]):
+            elif (test_Execution_status == [] or test_Execution_status == [False] or test_Execution_status == [None]) or (campaigns_status == [] or campaigns_status == [False]):
                 # statement = "Test failed"
                 # pytest.fail(statement)
                 remote_test_status.append(False)
-            campaigns_created.append(usercampaignsname)
+            else:
+                campaigns_created.append(usercampaignsname)
         except Exception as e:
             pass
         return device , time_difference_value
